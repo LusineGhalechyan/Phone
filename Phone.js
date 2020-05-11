@@ -1,7 +1,7 @@
 const operator = new Operator();
 function Phone(model, osType, size, pNumber) {
 
-  this.model = model;
+ this.model = model;
  this.osType = osType;
  this.size = size;
  this.phoneNumber = pNumber;
@@ -18,11 +18,7 @@ function Phone(model, osType, size, pNumber) {
    console.log(`Call from ${caller}`);
    this.callDate = new Date();
  };
-//  this.print = function () {
-//    console.log(`Model: ${this.model}`);
-//    console.log(`OS: ${this.osType}`);
-//    console.log(`Size: ${JSON.stringify(this.size)}`);
-//  };
+
  operator.addAbonent(this, this.phoneNumber);
  this.sendMessage = (number, message) => {
    operator.sendMessage(this.phoneNumber, number, message);
